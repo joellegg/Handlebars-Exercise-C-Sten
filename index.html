@@ -13,13 +13,11 @@
 <!-- handlebars script -->
     <script id="handlingScript" type="text/x-handlebars-template">
         <div class="randomUser">
-            <img src="{{ results.0.picture.medium }}">
+            <img src="{{ results.0.picture.large }}">
             <h4>{{ results.0.name.last }}, {{ results.0.name.first }} </h4>
             <h2>Address</h2>
                 <h4>{{ results.0.location.street }}</h4>
-                <h4>{{ results.0.location.city }}</h4>
-                <h4>{{ results.0.location.state }}</h4>
-                <h4>{{ results.0.location.postcode }}</h4>
+                <h4>{{ results.0.location.city }}, {{ results.0.location.state }}, {{ results.0.location.postcode }}</h4>
             <h2>Email</h2>
                 <h4>{{ results.0.email }}</h4>
         </div>
